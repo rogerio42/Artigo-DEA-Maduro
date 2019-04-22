@@ -1,0 +1,65 @@
+\newcommand{\curso}[1]{\def\imprimircurso{#1}}
+
+\newcommand{\palavraChaveUm}[1]{\def\imprimirpalavrachaveum{#1}}
+\newcommand{\palavraChaveDois}[1]{\def\imprimirpalavrachavedois{#1}}
+
+\newcommand{\cdu}[1]{\def\nomecdu{#1}}
+\newcommand{\dataDaAprovacao}[1]{\def\imprimirdatadaaprovacao{#1}}
+
+\newcommand{\membroConvidadoUm}[1]{\def\imprimirmembroconvidadoum{#1}}
+\newcommand{\membroConvidadoDois}[1]{\def\imprimirmembroconvidadodois{#1}}
+
+\newcommand\BackgroundPic{%
+	\put(0,280){%
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\vfill
+			\centering
+			\includegraphics{figuras/positivo_cor.pdf}%
+			\vfill
+		}
+	}
+}
+
+\renewcommand{\imprimircapa}{%
+  \begin{capa}%
+    \center
+	\AddToShipoutPicture*{\BackgroundPic}
+
+%	\begin{huge}
+%		\textbf{\textsc{Trabalho de Conclusão de Curso}}
+%	\end{huge}
+
+    \vspace*{1.0in}
+	{\large\imprimirinstituicao}
+	\par
+    
+
+	\vspace{1.0in}
+
+    {\ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo}
+    %\vspace*{\fill}
+    \vspace{1.3in}
+    
+	\begin{flushright}
+    	%{\large{Aluno: \imprimirautor}}
+		{\large{Aluno: Tiago Medina Chagas - Matrícula: 180006436}}
+		\par
+		{\large{Aluno: Renato Sampaio Meireles - Matrícula: 180006151}}
+		\par
+		{\large{Aluno: Rogério Guimarães Sampaio - Matrícula: 180006240}}
+		\par
+    	%{\large{Professor: \imprimirorientador}}
+    	\par
+    	\vspace{0.5in}
+    	%{\large\imprimircurso}
+	\end{flushright}
+		
+    \vspace*{0.5in}
+    {\large\imprimirlocal}
+    \par
+    {\large\imprimirdata}
+    
+    \vspace*{1.7in}
+  \end{capa}
+}
+
